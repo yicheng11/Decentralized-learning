@@ -12,5 +12,5 @@ python run.py --config=config.json
 `config.json` files
 
 We use a JSON file (i.e.,config.json) to manage the configuration parameters for decentralized learning simulation.
-For training different dataset, you can modify the `model` in JSON file to "FashionMNIST" or "CIFAR-10".
+For training different datasets, you can modify the `model` in JSON file to "FashionMNIST" or "CIFAR-10".
 If you want to adjust more detailed settings, you can modify the json file.
