@@ -1,0 +1,35 @@
+{
+    "clients": {
+        "total": 32,
+        "per_round": 32,
+        "label_distribution": "uniform"
+    },
+    "data": {
+        "loading": "static",
+        "partition": {
+            "size": 1080
+        },
+        "IID": false,
+        "bias": {
+            "primary": 0.8,
+            "secondary": false
+        }
+
+    },
+    "federated_learning": {
+        "rounds": 1000,
+        "target_accuracy": 0.8,
+        "task": "train",
+        "epochs": 3,
+        "batch_size": 100
+    },
+    "model": "FashionMNIST",
+    "paths": {
+        "data": "./data",
+        "model": "./models",
+        "reports": "reports.pkl"
+    },
+    "server": "gossip_rl_pca",
+    "degree": 2,
+    "selectneighbor": true
+}
